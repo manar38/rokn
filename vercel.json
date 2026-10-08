@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": true,
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
@@ -15,7 +14,7 @@
     { "source": "/SiteCheck(.*)", "destination": "/check.html" },
     { "source": "/SiteERP(.*)", "destination": "/erp.html" },
     { "source": "/SiteLogin(.*)", "destination": "/login.html" },
-    { "source": "/SiteStaffLogin(.*)", "destination": "/login.html" }
+    { "source": "/SiteStaffLogin(.*)", "destination": "/staff-login.html" }
   ],
   "headers": [
     {
