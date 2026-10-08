@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Design Tokens & CSS Variables
+   ========================================================================== */
+:root {
+  /* Brand Colors */
+  --color-primary: #0F9D74;
+  --color-primary-dark: #0A6B4E;
+  --color-primary-deeper: #0A7F5D;
+  --color-primary-accent: #0A8A64;
+  --color-primary-light: #D8F4E9;
+  --color-primary-subtle: #CFF0E1;
+  --color-primary-tint: #B7E6D2;
+  --color-primary-pale: #DDF6EC;
+  --color-primary-soft: #CFEEDF;
+
+  /* Dark Greens */
+  --color-dark: #0C2A22;
+  --color-dark-surface: #14382D;
+  --color-dark-surface-2: #12392F;
+  --color-dark-border: #1E4A3C;
+  --color-dark-badge: #1B4638;
+
+  /* Neutrals & Backgrounds */
+  --color-bg: #FAFAF6;
+  --color-surface: #FFFFFF;
+  --color-text-main: #0C2A22;
+  --color-text-body: #3B5A50;
+  --color-text-muted: #5C7168;
+  --color-text-light: #8A968F;
+  --color-text-inverse: #FFFFFF;
+  --color-text-inverse-muted: #BFD9CE;
+  --color-text-inverse-subtle: #CFE8DE;
+  --color-text-inverse-soft: #B9D3C8;
+  --color-text-inverse-dim: #8FB0A2;
+  --color-text-inverse-slate: #B7D4C8;
+
+  /* Accent Colors */
+  --color-accent-gold: #FFB800;
+  --color-accent-gold-light: #FFD26A;
+  --color-accent-gold-bg: #FFF2C8;
+  --color-accent-gold-text: #4A3600;
+  --color-accent-gold-muted: #8A6400;
+  --color-accent-gold-body: #4A4520;
+  --color-accent-orange: #FFE0D2;
+  --color-accent-orange-dark: #B4471F;
+  --color-accent-orange-text: #5A2C18;
+  --color-accent-coral: #FF6B4A;
+  --color-accent-blue: #DDE6FF;
+  --color-accent-blue-dark: #2A47A0;
+  --color-accent-blue-text: #28405F;
+  --color-accent-blue-deep: #243A68;
+  --color-accent-mint-text: #1F4A3C;
+
+  /* Borders */
+  --color-border: #E3E2D6;
+  --color-border-light: #ECEADC;
+  --color-border-dashed: #C3C8BC;
+  --color-border-input: #CFCFBF;
+
+  /* Typography */
+  --font-family-base: 'Tajawal', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-heading: 'Cairo', 'Tajawal', sans-serif;
+
+  /* Layout & Spacing */
+  --container-max-width: 1240px;
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 20px;
+  --radius-2xl: 22px;
+  --radius-3xl: 26px;
+  --radius-4xl: 28px;
+  --radius-5xl: 36px;
+  --radius-6xl: 40px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 8px 20px rgba(12, 42, 34, 0.10);
+  --shadow-md: 0 8px 20px rgba(12, 42, 34, 0.14);
+  --shadow-lg: 0 16px 34px rgba(12, 42, 34, 0.16);
+  --shadow-xl: 0 30px 60px rgba(12, 42, 34, 0.22);
+  --shadow-lift: 0 24px 44px rgba(12, 42, 34, 0.14);
+}

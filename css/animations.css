@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Animations & Transitions
+   ========================================================================== */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes marq {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes wa {
+  0% {
+    box-shadow: 0 0 0 0 rgba(15, 157, 116, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 22px rgba(15, 157, 116, 0);
+  }
+}
+
+@keyframes shield {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes drift {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(16px, -18px);
+  }
+}
+
+/* Animation Utility Classes */
+.rise {
+  animation: rise 0.8s ease both;
+}
+
+.d1 {
+  animation-delay: 0.2s;
+}
+
+.d2 {
+  animation-delay: 0.9s;
+}
+
+.d3 {
+  animation-delay: 1.6s;
+}
+
+.d4 {
+  animation-delay: 2.3s;
+}
+
+.float {
+  animation: float 5.5s ease-in-out infinite;
+}
+
+.float2 {
+  animation: float 7s ease-in-out infinite reverse;
+}
+
+.blob {
+  animation: drift 9s ease-in-out infinite;
+}
+
+.mq {
+  display: flex;
+  width: max-content;
+  direction: ltr;
+  animation: marq 34s linear infinite;
+}
+
+.mq:hover {
+  animation-play-state: paused;
+}
+
+.wa {
+  animation: wa 1.8s ease-out infinite;
+}
+
+.shield {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: shield 3.5s ease-in-out infinite;
+}
+
+.lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lift);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

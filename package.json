@@ -1,0 +1,26 @@
+{
+  "name": "qeema-accounting-site",
+  "version": "1.0.0",
+  "description": "قيمة - خدمات المحاسبة والاستشارات المالية عن بُعد لشركات الخليج",
+  "main": "index.html",
+  "bin": {
+    "qeema-serve": "./bin/serve.js",
+    "qeema-build": "./bin/build.js"
+  },
+  "scripts": {
+    "dev": "node bin/serve.js",
+    "start": "node bin/serve.js",
+    "build": "node bin/build.js",
+    "deploy": "node bin/build.js && vercel --prod"
+  },
+  "keywords": [
+    "qeema",
+    "accounting",
+    "finance",
+    "arabic",
+    "landing-page",
+    "mvvm"
+  ],
+  "author": "",
+  "license": "MIT"
+}

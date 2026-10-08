@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة دخول الموظفين وفريق العمل | قيمة</title>
+  <meta name="description" content="تسجيل دخول المحاسبين والمدققين الماليين إلى منصة إدارة حسابات ودفاتر العملاء.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column; background: var(--color-bg);">
+  
+  <div class="page-wrapper" style="flex: 1; display: flex; flex-direction: column;">
+    <!-- Top Header Bar -->
+    <header class="site-header" style="background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
+      <div class="site-header-inner" style="justify-content: space-between;">
+        <a href="index.html" class="site-logo hd" aria-label="الصفحة الرئيسية لقيمة">
+          <svg viewBox="535 82 322 436" width="34" height="46" role="img" aria-label="شعار قيمة">
+            <circle cx="657" cy="117" r="28.5" fill="#F4B438"></circle>
+            <circle cx="735" cy="117" r="28.5" fill="#F4B438"></circle>
+            <path d="M696 481 A156 156 0 1 1 800.4 440.9 L744.8 416.8 A104 104 0 1 0 696 429 Z" fill="#0E8561"></path>
+            <path d="M696 455 C735 455 760 458 790 472 C808 481 818 487 826 488" fill="none" stroke="#0E8561" stroke-width="52" stroke-linecap="round"></path>
+          </svg>
+          <span class="site-logo-text">
+            <span class="site-logo-title">قيمة</span>
+            <span class="site-logo-subtitle">بوابة فريق العمل والمحاسبين</span>
+          </span>
+        </a>
+
+        <div>
+          <a href="index.html" class="btn-secondary" style="font-size: 14px; padding: 0 16px; min-height: 40px;">العودة للرئيسية ←</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 48px 24px;">
+      <div style="width: 100%; max-width: 440px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-4xl); padding: 40px; box-shadow: var(--shadow-xl);">
+        
+        <div style="text-align: center; margin-bottom: 28px;">
+          <span style="display: inline-flex; width: 64px; height: 64px; border-radius: var(--radius-pill); background: var(--color-primary-light); align-items: center; justify-content: center; margin-bottom: 16px;">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <h1 class="hd" style="font-size: 24px; font-weight: 800; margin: 0 0 8px; color: var(--color-dark);">دخول الموظفين</h1>
+          <p style="font-size: 14px; color: var(--color-text-body); margin: 0;">لوحة تحكم المحاسبين والمدققين الماليين</p>
+        </div>
+
+        <form id="staff-login-form" onsubmit="event.preventDefault(); alert('تم التحقق من بيانات الموظف بنجاح.');" style="display: flex; flex-direction: column; gap: 16px;">
+          <div>
+            <label style="display: block; font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--color-dark);">البريد الوظيفي (@qeema.com)</label>
+            <input type="email" class="form-input" placeholder="name@qeema.com" required>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 14px; font-weight: 700; margin-bottom: 6px; color: var(--color-dark);">كلمة المرور</label>
+            <input type="password" class="form-input" placeholder="••••••••" required>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px;">
+            <label style="display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--color-text-body);">
+              <input type="checkbox" name="remember" checked style="accent-color: var(--color-primary);"> تذكر هذا الجهاز
+            </label>
+            <a href="contact.html" style="color: var(--color-primary); font-weight: 700;">نسيت كلمة المرور؟</a>
+          </div>
+
+          <button type="submit" class="btn-submit-hero" style="margin-top: 8px;">تسجيل الدخول للنظام</button>
+        </form>
+
+        <div style="margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--color-border-light); text-align: center; font-size: 13px; color: var(--color-text-muted);">
+          هل أنت عميل؟ <a href="login.html" style="color: var(--color-primary); font-weight: 700;">دخول بوابة العملاء ←</a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer Copyright -->
+    <footer style="text-align: center; padding: 20px; font-size: 13px; color: var(--color-text-muted); border-top: 1px solid var(--color-border);">
+      جميع الحقوق محفوظة © 2026 شركة قيمة للخدمات المحاسبية
+    </footer>
+  </div>
+
+  <script src="js/viewmodel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
